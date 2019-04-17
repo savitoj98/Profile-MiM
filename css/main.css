@@ -1,0 +1,229 @@
+html, body {
+  width: 100%;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100px;
+  background-color: #021e4b;
+  justify-content: space-between;
+}
+
+.rectangle-heading {
+    padding-left: 50px;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+    display: inline-flex;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    padding: 50px;
+    float: right;
+    cursor: pointer;
+}
+
+.form-segment {
+    padding: 5% 10%;
+}
+
+.menu {
+    background-color: #003273;
+}
+
+
+.menu-options {
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.active-menu-option {
+    position: relative;
+    text-align: center;
+}
+
+.active-menu-option:after {
+    content: ' ';  
+    width: 0;
+    height: 0;
+    top: 100%;
+    left: 50%;
+    /* display: inline; */
+    border-left: 6px solid transparent; 
+    border-right: 6px solid transparent; 
+    border-bottom: 10px solid #fff; 
+    position: absolute;
+    z-index: 100;
+
+}
+
+.education {
+    padding: 0 20%;
+}
+
+.education form h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #021e4b;
+    margin-bottom: 10px;
+}
+
+.education form .input-field {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.label-row-text {
+    margin-top: 2em;
+}
+
+.update-education {
+    text-align: center;
+}
+
+.update-education input[type="submit"] {
+    color: #fff;
+    padding: 8px 20px;
+    border: solid 1px #003273;
+    background-color: #003273;
+}
+
+.add-form {
+    color: #008ace;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.add-form .fa-plus-circle {
+    color: #008ace;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.review-segment {
+    padding: 10% 8%;    
+}
+
+.review-box {
+    background: #008ace;
+}
+
+.review-heading {
+    display: inline-block;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.reviews-hide {
+    display: inline-block;
+    float: right;
+    padding: 10px 15px;
+}
+
+.reviews-hide .fa {
+    color: white;
+    cursor: pointer;
+}
+
+.reviewer {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #263238;
+}
+
+.review-content {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.review-list hr{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.review-add {
+    text-align: center;
+}
+
+.reviewer-image {
+    text-align: center;
+}
+
+.reviewer-image img {
+    margin-top: 12px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 990px) {
+    .review-segment{
+        padding: 0;
+    }
+
+    .education{
+        padding: 0;
+    }
+
+    .form-segment{
+        padding: 0;
+    }
+
+    .row .col-md-12 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .rectangle{
+        height: 60px;
+    }
+
+    .rectangle-heading{
+        padding-left: 30px;
+        font-size: 25px;
+    }
+
+    .hamburger {
+        display: inline-flex;
+        padding: 40px;
+    }
+
+    .menu {
+        height: 40px;
+    }
+
+    .menu-options {
+        font-size: 12px;
+    }
+    
+}
